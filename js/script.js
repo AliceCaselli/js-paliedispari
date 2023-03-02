@@ -49,7 +49,6 @@ function isAnEvenPalindrome(evenWord, outputResult){
         if(evenWord[i] != evenWord[evenWord.length - (i + 1)]){
 
             isPalindrome = false;
-
         }
     }
 
@@ -63,6 +62,7 @@ function isAnEvenPalindrome(evenWord, outputResult){
     }
 }
 
+//creo una funzione per verificare se la dispari è palindroma
 function isAnOddPalindrome(oddWord, outputResult){
 
     let isPalindrome = true;
@@ -86,13 +86,16 @@ function isAnOddPalindrome(oddWord, outputResult){
     }
 }
 
-
+//aggiungere un evento al click del button in cui viene verificato se la parola inserita è palindroma o meno
 btnSendEl.addEventListener('click', function() {
 
     let word = wordEl.value;
 
+    //controllo per inserimento valore 0
     if(word.length == 0) {
+
         resultEl.innerText = "Inserisci una parola (o un numero)";
+
     } else if(isEvenOrOdd(word)) {
     
         isAnEvenPalindrome(word, resultEl);
