@@ -107,3 +107,28 @@ btnSendEl.addEventListener('click', function() {
 })
 
 
+
+
+
+//creare button pari in html
+//creare button dispari in html
+//---
+//creare una funzione che generi un numero da 1 a 5 
+//creare una funzione che verifichi se la somma del risultato è pari o dispari
+//creare una variabile che memorizzi la somma dei numeri
+//---
+//creare event listner click con button pari
+//variabile per acquisizione del numero al click
+//genera un numero casuale per il pc
+// ?SE la somma di N utente e N pc è pari
+//  -hai vinto
+// :ALTRIMENTI 
+//  -hai perso
+//---
+//creare event listner click con button dispari
+//variabile per acquisizione del numero al click
+//genera un numero casuale per il pc
+// ?SE la somma di N utente e N pc è dispari
+//  -hai vinto
+// :ALTRIMENTI 
+//  -hai perso
