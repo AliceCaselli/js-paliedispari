@@ -134,10 +134,72 @@ btnSendEl.addEventListener('click', function() {
 //  -hai perso
 
 
-//funzione numero random
+
+let pariBtnEl = document.getElementById("pari");
+
+let dispariBtnEl = document.getElementById("dispari");
+
+let userNumber = document.getElementById("user-number");
+
+let outputEL = document.getElementById("output");
+
+
+//creare una variabile che memorizzi la somma dei numeri
+let somma = 0;
+
+
+pariBtnEl.addEventListener('click', function(){
+    
+    outputEL.innerText = ("Il numero immesso è " + userNumber.value);
+    let rNum = randomNumber(1, 5);
+    outputEL.innerText += ("Il numero generato casualmente è " + rNum);
+    somma = rNum + parseInt(userNumber.value);
+    outputEL.innerText = ("La somma dei due numeri è " + somma)
+
+    if(isOddOrEven(somma)){
+        outputEL.innerHTML = 
+
+        `Il numero immesso è ${userNumber.value} <br>
+        Il numero generato casualmente è ${rNum} <br>
+        La somma dei due numeri è ${somma} <br>
+
+        HAI VINTO!`
+    }else{
+
+        outputEL.innerHTML = 
+        `Il numero immesso è ${userNumber.value} <br>
+        Il numero generato casualmente è ${rNum} <br>
+        La somma dei due numeri è ${somma} <br>
+
+        HAI PERSO!`
+    }
+
+
+})
+
+
+
+
+
+
+//creare una funzione che generi un numero da 1 a 5 
 function randomNumber(min, max){
 
     let random = Math.floor (Math.random () * (max - min) + min);
 
     return random
-}
+};
+
+//creare una funzione che verifichi se la somma del risultato è pari o dispari
+function isOddOrEven(somma){
+
+
+    if(somma % 2 == 0){
+        
+        return true;
+
+    }else{
+
+        return false;
+    }
+};

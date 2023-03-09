@@ -30,9 +30,30 @@ h2{
 
 .pari-dispari-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 50px;
 
     margin-top: 80px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.input{
+    align-self: center;
+    text-align: center;
+    padding: 5px 10px;
+    /* display: none; */
+
+}
+
+#output{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
