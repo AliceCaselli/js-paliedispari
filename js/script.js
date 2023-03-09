@@ -132,3 +132,12 @@ btnSendEl.addEventListener('click', function() {
 //  -hai vinto
 // :ALTRIMENTI 
 //  -hai perso
+
+
+//funzione numero random
+function randomNumber(min, max){
+
+    let random = Math.floor (Math.random () * (max - min) + min);
+
+    return random
+}
